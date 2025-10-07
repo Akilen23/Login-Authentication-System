@@ -2,16 +2,16 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
 
-// 🔥 Your Firebase Config (replace this)
-const firebaseConfig = {
-  apiKey: "YOUR_KEY_HERE",
-  authDomain: "YOUR_APP.firebaseapp.com",
-  projectId: "YOUR_APP_ID",
-  storageBucket: "YOUR_BUCKET",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
-};
 
+ const firebaseConfig = {
+    apiKey: "AIzaSyBSxp7qagnbNBef4SJ7cocaMYeMRQv_jNY",
+    authDomain: "project1-f2326.firebaseapp.com",
+    projectId: "project1-f2326",
+    storageBucket: "project1-f2326.firebasestorage.app",
+    messagingSenderId: "731173190641",
+    appId: "1:731173190641:web:d7af8eca9daf0400b1a250",
+    measurementId: "G-CHVJTTFJQL"
+  };
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
@@ -30,7 +30,7 @@ loginBtn.addEventListener("click", async () => {
   try {
     await signInWithPopup(auth, provider);
   } catch (error) {
-    alert("⚠️ " + error.message);
+    alert("⚠ " + error.message);
   }
 });
 

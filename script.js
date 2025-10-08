@@ -3,7 +3,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebas
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
 
 
- const firebaseConfig = {
+const firebaseConfig = {
   apiKey: "AIzaSyB9ExdEa9XqUy-em9NQhkpvaxhVHpGCgE4",
   authDomain: "login-authentication-sys-6873c.firebaseapp.com",
   projectId: "login-authentication-sys-6873c",
@@ -50,4 +50,5 @@ onAuthStateChanged(auth, (user) => {
     userDetails.classList.add("hidden");
   }
 });
+
 

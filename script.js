@@ -4,14 +4,14 @@ import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChang
 
 
  const firebaseConfig = {
-    apiKey: "AIzaSyBSxp7qagnbNBef4SJ7cocaMYeMRQv_jNY",
-    authDomain: "project1-f2326.firebaseapp.com",
-    projectId: "project1-f2326",
-    storageBucket: "project1-f2326.firebasestorage.app",
-    messagingSenderId: "731173190641",
-    appId: "1:731173190641:web:d7af8eca9daf0400b1a250",
-    measurementId: "G-CHVJTTFJQL"
-  };
+  apiKey: "AIzaSyB9ExdEa9XqUy-em9NQhkpvaxhVHpGCgE4",
+  authDomain: "login-authentication-sys-6873c.firebaseapp.com",
+  projectId: "login-authentication-sys-6873c",
+  storageBucket: "login-authentication-sys-6873c.firebasestorage.app",
+  messagingSenderId: "766224014223",
+  appId: "1:766224014223:web:927175c2b1865521c809fa",
+  measurementId: "G-CNR5D15X91"
+};
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
@@ -50,3 +50,4 @@ onAuthStateChanged(auth, (user) => {
     userDetails.classList.add("hidden");
   }
 });
+
